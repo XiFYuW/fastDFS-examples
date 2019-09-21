@@ -1,0 +1,14 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: fastDFSProducer
+  profiles:
+    active: fastDFS
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#management:
+#  security:
+#    enabled: false
