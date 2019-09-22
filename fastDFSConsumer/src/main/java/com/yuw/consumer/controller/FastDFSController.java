@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @author https://github.com/XiFYuW
  * @date 2019/9/21 10:07
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FastDFSController {
 
-    @Autowired
+    @Resource
     FastDFSService fastDFSService;
 
     @RequestMapping("/hello/{name}")
