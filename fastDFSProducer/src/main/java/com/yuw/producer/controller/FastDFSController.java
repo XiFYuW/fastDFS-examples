@@ -19,12 +19,12 @@ import java.util.HashMap;
 @RestController
 public class FastDFSController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/common/hello")
     public String index(@RequestParam String name) {
         return "hello "+name+"，this is first messge";
     }
 
-    @RequestMapping(value = "/upload")
+    @RequestMapping(value = "/common/upload")
     public String upload(){
         FastDFSClient fastDFSClient = new FastDFSClient();
         FastDFSResponse fastDFSResponse = new FastDFSResponse();
@@ -37,4 +37,8 @@ public class FastDFSController {
         return JSON.toJSONString(fastDFSResponse);
     }
 
+    @RequestMapping("/common/auth")
+    public String foo(String auth) {
+        return "hello "+auth+"!";
+    }
 }

@@ -19,10 +19,16 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.37</version>
         </dependency>
+        <!-- fastdfs-api -->
         <dependency>
             <groupId>fastdfs-api</groupId>
             <artifactId>fastdfs-api</artifactId>
             <version>1.0</version>
+        </dependency>
+        <!-- zipkin -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
     </dependencies>
 
