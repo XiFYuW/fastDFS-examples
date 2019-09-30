@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: application-fastDFSGateway
+      profile: dev
+      discovery:
+        serviceId: configServer
+        enabled: true
+      label: master
