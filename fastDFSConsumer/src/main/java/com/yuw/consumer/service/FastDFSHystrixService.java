@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Component
 public class FastDFSHystrixService implements FastDFSService{
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/common/hello")
     public String hello(@RequestParam(value = "name") String name){
         return "hello" +name+", this messge send failed ";
     }
 
-    @RequestMapping(value = "/upload")
+    @RequestMapping(value = "/common/upload")
     public String upload(){
         return "fastDFS文件服务异常";
     }

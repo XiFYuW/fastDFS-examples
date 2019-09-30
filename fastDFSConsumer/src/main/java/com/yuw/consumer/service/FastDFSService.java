@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name= "fastDFSProducer",fallback = FastDFSHystrixService.class)
 public interface FastDFSService {
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/common/hello")
     String hello(@RequestParam(value = "name") String name);
 
-    @RequestMapping(value = "/upload")
+    @RequestMapping(value = "/common/upload")
     String upload();
 }

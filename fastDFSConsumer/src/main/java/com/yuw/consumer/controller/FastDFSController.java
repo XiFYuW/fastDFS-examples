@@ -20,12 +20,12 @@ public class FastDFSController {
     @Resource
     FastDFSService fastDFSService;
 
-    @RequestMapping("/hello/{name}")
+    @RequestMapping("/common/hello/{name}")
     public String index(@PathVariable("name") String name) {
         return fastDFSService.hello(name);
     }
 
-    @RequestMapping(value = "/upload")
+    @RequestMapping(value = "/common/upload")
     public String index() {
         return fastDFSService.upload();
     }

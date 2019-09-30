@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      name: application-fastDFSConsumer
+      profile: dev
+      discovery:
+        serviceId: configServer
+        enabled: true
+      label: master
+
