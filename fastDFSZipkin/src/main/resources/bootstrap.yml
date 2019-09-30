@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      name: application-fastDFSZipkin
+      profile: dev
+      discovery:
+        serviceId: configServer
+        enabled: true
+      label: master
+  main:
+    allow-bean-definition-overriding: true
