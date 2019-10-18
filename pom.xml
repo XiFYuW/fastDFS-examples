@@ -11,7 +11,7 @@
     <modules>
         <module>fastDFSConsumer</module>
         <module>fastDFSProducer</module>
-        <module>fastDFSeureka</module>
+        <module>fastDFSEureka</module>
         <module>fastDFSZuul</module>
         <module>fastDFSGateway</module>
         <module>fastDFSProducers</module>
@@ -52,6 +52,14 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
